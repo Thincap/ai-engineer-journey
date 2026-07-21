@@ -111,3 +111,26 @@ print(tuple2)  # Output: ('History', 'Maths', 'Physics')
 # tuple1[0] = 'Biology'  # it raises TypeError: 'tuple' object does not support item assignment (tuples are immutable)
 # print(tuple1)  # Output: ('History', 'Maths', 'Physics')
 # print(tuple2)  # Output: ('History', 'Maths', 'Physics')
+
+# Sets in Python
+# Sets are unordered collection of unique elements(No duplicates). Sets are defined using curly braces {}.
+
+courses_set = {'CN', 'DSA', 'OS', 'DBMS', 'CN'}  # it removes the duplicate element 'CN' from the set
+print(courses_set)  # Output: {'CN', 'DSA', 'OS', 'DBMS'} (the order of the elements may vary as sets are unordered)    
+
+# intersection(), Difference(), union() methods in Python sets
+set1 = {1, 2, 3, 4, 5}
+set2 = {4, 5, 6, 7, 8}
+print(set1.intersection(set2))  # Output: {4, 5} (returns the common elements in both sets)
+print(set1.difference(set2))  # Output: {1, 2, 3} (returns the elements in set1 that are not in set2)
+print(set1.union(set2))  # Output: {1, 2, 3, 4, 5, 6, 7, 8} (returns all the unique elements in both sets)
+
+# how to create an empty list, tuple and set in Python
+empty_list = []
+empty_list = list()  # it creates an empty list
+
+empty_tuple = ()
+empty_tuple = tuple()  # it creates an empty tuple
+
+empty_set = set()  # it creates an empty set
+# empty_set = {} (This is not correct , as it will create empty Dictonary and not an empty set)
