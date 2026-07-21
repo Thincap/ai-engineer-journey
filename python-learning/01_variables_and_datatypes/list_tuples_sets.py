@@ -85,3 +85,29 @@ courses = ['Computer Networks', 'Data Structures', 'Operating Systems', 'Databas
 print(courses.index('Data Structures'))  # Output: 1
 # print(courses.index('Machine Learning'))  # Output: ValueError: 'Machine Learning' is not in list (if the element is not found in the list)
 
+
+
+# Tuples in Python
+# Tuples are immutable (cannot be changed) and ordered collection of elements whereas lists are mutable (can be changed) and ordered collection of elements. Tuples are defined using parentheses () whereas lists are defined using square brackets [].
+
+# Mutable
+list1 = ['History', 'Maths', 'Physics']
+list2 = list1
+
+print(list1)  # Output: ['History', 'Maths', 'Physics']
+print(list2)  # Output: ['History', 'Maths', 'Physics']
+
+list1[0] = 'Biology'  # it changes the first element of the list1 to 'Biology'
+print(list1)  # Output: ['Biology', 'Maths', 'Physics']
+print(list2)  # Output: ['Biology', 'Maths', 'Physics']
+
+# Immutable
+tuple1 = ('History', 'Maths', 'Physics')
+tuple2 = tuple1
+
+print(tuple1)  # Output: ('History', 'Maths', 'Physics')
+print(tuple2)  # Output: ('History', 'Maths', 'Physics')
+
+# tuple1[0] = 'Biology'  # it raises TypeError: 'tuple' object does not support item assignment (tuples are immutable)
+# print(tuple1)  # Output: ('History', 'Maths', 'Physics')
+# print(tuple2)  # Output: ('History', 'Maths', 'Physics')
